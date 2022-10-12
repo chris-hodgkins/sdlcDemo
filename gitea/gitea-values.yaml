@@ -1,0 +1,19 @@
+service:
+  http:
+    type: NodePort
+    port: 3000
+    nodePort: 
+    externalTrafficPolicy: Local
+  ssh:
+    type: NodePort
+    port: 22
+    nodePort: 
+    externalTrafficPolicy: Local
+
+gitea:
+  admin:
+    username: "teaAdmin"
+    password: "defaultEarlGray"
+    email: "tea@aol.com"
+  config:
+    
